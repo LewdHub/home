@@ -1,48 +1,44 @@
 <script>
   import { onMount } from "svelte";
-  export let date;
+  //export let date;
 
   onMount(async () => {
-    const res = await fetch("/api/date");
-    const newDate = await res.text();
-    date = newDate;
+    //const res = await fetch("/api/date");
+    //const newDate = await res.text();
+    //date = newDate;
   });
 </script>
 
 <main>
-  <h1>Svelte + Node.js API</h1>
-  <h2>
-    Deployed with
-    <a href="https://vercel.com/docs" target="_blank" rel="noreferrer noopener">
-      Vercel
-    </a>
-    !
-  </h2>
-  <p>
-    <a
-      href="https://github.com/vercel/vercel/tree/main/examples/svelte"
-      target="_blank"
-      rel="noreferrer noopener">
-      This project
-    </a>
-    is a
-    <a href="https://svelte.dev/">Svelte</a>
-    app with three directories,
-    <code>/public</code>
-    for static assets,
-    <code>/src</code>
-    for components and content, and
-    <code>/api</code>
-    which contains a serverless
-    <a href="https://nodejs.org/en/">Node.js</a>
-    function. See
-    <a href="/api/date">
-      <code>api/date</code>
-      for the Date API with Node.js
-    </a>
-    .
-  </p>
-  <br />
-  <h2>The date according to Node.js is:</h2>
-  <p>{date ? date : 'Loading date...'}</p>
+  <div class="left-c">
+    <div class="left-bar">
+      <div class="gradt"></div>
+      <div class="cont">
+        <p class="title"><b>[ lewd ]</b></p>
+        <div class="project-list">
+          <p style="text-align: center">No active projects yet.</p>
+        </div>
+        <div class="hx-links">
+          <a class="list" href="https://github.com/LewdHub" target="_blank">GitHub</a>
+          <a class="list" href="/#" target="_blank">Discord</a>
+        </div>
+      </div>
+    </div>
+    <div class="left-bar def-cursor">
+      <div class="gradt"></div>
+      <div class="cont">
+        <p class="title"><b>api status</b></p>
+        <div class="api-list">
+          <div class="api-b up">auth</div>
+          <div class="api-b down">eu-endpoint</div>
+          <div class="api-b down">us-endpoint</div>
+        </div>
+      </div>
+    </div>
+    <div class="left-bar">
+      <div class="cont">
+        <p class="title" style="font-size: 1rem">2021 (c) Lewd.li</p>
+      </div>
+    </div>
+  </div>
 </main>
